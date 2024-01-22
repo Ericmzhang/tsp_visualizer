@@ -103,6 +103,7 @@ const setType = (type)=>{
     <div >
     <div className='Left'>
       <Link to ="/">Home</Link>
+      <p>make sure to run node server.js and follows instructions from the readMe</p>
       <div className = "buttons">
         <button className="square-button" onClick={() => setType("file")}>txt File Input</button>
         <button className="square-button" onClick={() => setType("manual")}>Manual Input</button>
@@ -110,7 +111,25 @@ const setType = (type)=>{
       
       <Textinput handleFileChange={handleFileChange} inputType ={inputType} coords = {Coords} path = {Path} fileContent={fileContent}></Textinput>
       <Manualinput inputType = {inputType}></Manualinput>
-      
+      <footer className='margin-left'>
+						<section>
+							<h2>Contact Me</h2>
+							<dl className="alt">
+								<dt>Location</dt>
+								<dd>Ann Arbor, MI</dd>
+								<dt>Phone</dt>
+								<dd>734-546-0902</dd>
+								<dt>Email</dt>
+								<dd><a href="#">emzhang@umich.edu</a></dd>
+							</dl>
+							<ul className="icons">
+							<li><a href="https://www.linkedin.com/in/eric-zhang-75b165251/" target="_blank" className="icon"><img src="linkedin.png" className ="header-icon" alt="LinkedIn logo"></img></a></li>
+							<li><a href="https://github.com/Ericmzhang" target="_blank" className="icon"><img src="github.png" className ="header-icon" alt="GitHub logo"></img></a></li>
+							<li><a href="Eric_Zhang_Resume.pdf" target="_blank" className="icon"><img src="resume.png" className ="header-icon" alt="PDF logo"></img></a></li>
+						</ul>
+						</section>
+						
+					</footer>
       
       
     </div>

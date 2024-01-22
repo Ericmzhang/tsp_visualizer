@@ -1,0 +1,1 @@
+To view, clone the repository and run "node server.js". Then go to the TSP visualizer project at https://ericmzhang.github.io/.
