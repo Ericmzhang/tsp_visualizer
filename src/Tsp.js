@@ -103,7 +103,7 @@ const setType = (type)=>{
     <div >
     <div className='Left'>
       <Link to ="/">Home</Link>
-      <p>make sure to run node server.js and follows instructions from the readMe</p>
+      <p>Make sure to run node server.js and follows instructions from the readMe</p>
       <div className = "buttons">
         <button className="square-button" onClick={() => setType("file")}>txt File Input</button>
         <button className="square-button" onClick={() => setType("manual")}>Manual Input</button>
