@@ -1,6 +1,8 @@
 import { useState } from "react"
 import axios from 'axios'
+import '../App.css'
 import ScatterChart from "./ScatterChart"
+import { index } from "d3"
 function Manualinput ({inputType}){
     const [xVal, setXVal] = useState('')
     const [yVal, setYVal] = useState('')
@@ -85,8 +87,8 @@ function Manualinput ({inputType}){
                 </br>The first coordinate must be the starting point and the rest can be in any order</p>
                 <div className="buttons">
                     <form onSubmit={addVal}>
-                    X:<input value = {xVal} onChange = {handleXChange}/>
-                    Y:<input value = {yVal} onChange = {handleYChange}/>
+                    X:<input className="input" value = {xVal} onChange = {handleXChange}/>
+                    Y:<input className="input" value = {yVal} onChange = {handleYChange}/>
                     <button type="submit">add</button>
                     </form>  
                     
